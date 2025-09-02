@@ -1,17 +1,11 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
-interface Props {
-  headline: string;
-  setHeadline: (text: string) => void;
-  settings: any;
-  setSettings: (s: any) => void;
-}
+import type { IControlProps } from "../types/controls.types";
 
 export default function Controls({
   headline,
   setHeadline,
   settings,
   setSettings,
-}: Props) {
+}: IControlProps) {
   return (
     <div className="bg-white rounded-2xl shadow-lg p-4 w-full max-w-xl space-y-4">
       {/* Headline Text */}

@@ -1,18 +1,10 @@
 import { motion } from "framer-motion";
+import type { IHeadlineWidgetProps } from "../types/headline.types";
 
-interface Props {
-  text: string;
-  settings: {
-    fontSize: number;
-    fontFamily: string;
-    fontWeight: string;
-    gradient: boolean;
-    gradientDirection: string;
-    gradientColors: string[];
-  };
-}
-
-export default function HeadlineWidget({ text, settings }: Props) {
+export default function HeadlineWidget({
+  text,
+  settings,
+}: IHeadlineWidgetProps) {
   const {
     fontSize,
     fontFamily,
